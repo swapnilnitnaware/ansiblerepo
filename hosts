@@ -1,1 +1,7 @@
 13.233.104.185 URL=vaibhavmess.in
+- name: Playbook1
+  hosts: all
+  tasks: 
+  - name: print url
+    debug:
+      msg: "{{URL}}"
