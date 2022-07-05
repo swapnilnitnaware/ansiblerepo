@@ -1,10 +1,11 @@
-- name: Working With debug module
-  hosts: all
-
-  tasks:
-
-    # Module and argument in the same line
-    - name: First debug
-      debug: msg="Hello world"
-
+- name: playbook1 
+  hosts: localhost
+  vars:
+   URL: global.com
+  tasks: 
+  - name: print message_1
+    debug:
+     msg: "{{URL}}"
+  vars:
+   URL: local.com
          
