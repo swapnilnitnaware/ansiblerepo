@@ -1,0 +1,9 @@
+- name: Working With debug module
+  hosts: all
+
+  tasks:
+
+    # Module and argument in the same line
+    - name: First debug
+      debug: msg="Hello world"
+         
