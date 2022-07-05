@@ -4,7 +4,7 @@
   vars_prompt:
   - name: URL
     prompt: "ENTER URL"
-    private: false
+    private: true
 
   tasks: 
   - name: print url
