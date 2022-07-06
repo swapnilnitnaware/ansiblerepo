@@ -1,8 +1,0 @@
-- name: playbook1
-  hosts: all
-  become: yes
-  tasks: 
-    - name: print the host details1
-      debug:
-        msg: "distribution name:{{ansible_distribution}}"
-      when: ansible_distribution=="centos" or ansible_distribution=="ubuntu"
