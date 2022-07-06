@@ -4,6 +4,6 @@
   tasks: 
     - name: print the host details1
       debug:
-        msg:"distribution name:{{ansible_distribution}}"
+        msg: "distribution name:{{ansible_distribution}}"
       when: ansible_distribution=="centos"
       tags: dist 
