@@ -1,22 +1,22 @@
 - name : loop name
-  hosta: all
+  hosts: all
   tasks: 
     - name : print city name
       debug: 
-        msg: "all my city name : {{item}}"
+        msg: "all my city name: {{item}}"
       loop:
         - nag
         - pune
         - mumbai
         - chandrapur
 
-    - name : install packages
-      become: true
-      yum: 
-        name: "{{item}}"
-        state: latest
-      loop:
-        - httpd
-        - vim
-        - tree
-        - tomcat
+    # - name : install packages
+    #   become: true
+    #   yum: 
+    #     name: "{{item}}"
+    #     state: latest
+    #   loop:
+    #     - httpd
+    #     - vim
+    #     - tree
+    #     - tomcat
