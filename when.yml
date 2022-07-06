@@ -6,4 +6,3 @@
       debug:
         msg: "distribution name:{{ansible_distribution}}"
       when: ansible_distribution=="centos"
-      tags: dist 
