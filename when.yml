@@ -6,3 +6,7 @@
       debug:
         msg: "distribution name:{{ansible_distribution}}"
       when: ansible_distribution=="centos"
+
+    - name: print the host details2
+      debug:
+        msg: "my name is swapnil"
